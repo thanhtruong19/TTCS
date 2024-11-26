@@ -7,6 +7,6 @@ const foodSchema = new mongoose.Schema({
     image: { type: String, required: true },
     category:{ type:String, required:true}
 })
-
+//kiểm tra models food đã tồn tại hay chưa
 const foodModel = mongoose.models.food || mongoose.model("food", foodSchema);
 export default foodModel;

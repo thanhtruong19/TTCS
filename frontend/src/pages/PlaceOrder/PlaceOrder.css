@@ -45,3 +45,81 @@
         flex-direction: column;
     }
 }
+.place-order-right .cart-promocode {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .place-order-right .cart-promocode-input {
+    display: flex;
+    width: 100%;
+  }
+  
+  .place-order-right .cart-promocode-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .place-order-right .cart-promocode-input button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .place-order-right .cart-promocode-input button:hover {
+    background-color: #333;
+  }
+  
+  .cart-promocode {
+    padding-top: 30px;
+  }
+  
+  .place-order-right .cart-promocode {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .place-order-right .cart-promocode p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: left; /* Đảm bảo chữ lùi vào đầu */
+    margin: 0; /* Loại bỏ bất kỳ margin nào có thể đẩy chữ vào giữa */
+    padding: 0; /* Loại bỏ bất kỳ padding nào có thể đẩy chữ vào giữa */
+    width: 100%; /* Đảm bảo p chiếm toàn bộ chiều rộng của container */
+  }
+  
+  .place-order-right .cart-promocode-input {
+    display: flex;
+    width: 100%;
+  }
+  
+  .place-order-right .cart-promocode-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .place-order-right .cart-promocode-input button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .place-order-right .cart-promocode-input button:hover {
+    background-color: #333;
+  }
+  
+  

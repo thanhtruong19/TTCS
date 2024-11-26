@@ -88,31 +88,31 @@ export const menu_list = [
         menu_image: menu_1
     },
     {
-        menu_name: "Rolls",
+        menu_name: "Món cuốn",
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Tráng miệng",
         menu_image: menu_3
     },
     {
-        menu_name: "Sandwich",
+        menu_name: "Bánh Sandwich",
         menu_image: menu_4
     },
     {
-        menu_name: "Cake",
+        menu_name: "Bánh ngọt",
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Món thuần chay",
         menu_image: menu_6
     },
     {
-        menu_name: "Pasta",
+        menu_name: "Mì ống",
         menu_image: menu_7
     },
     {
-        menu_name: "Noodles",
+        menu_name: "Mì nước",
         menu_image: menu_8
     }]
 

@@ -48,7 +48,7 @@ const placeOrder = async (req, res) => {
 
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: "Lỗi" })
     }
 }
 
@@ -59,7 +59,7 @@ const listOrders = async (req, res) => {
         res.json({ success: true, data: orders })
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: "Lỗi" })
     }
 }
 
@@ -70,7 +70,7 @@ const userOrders = async (req, res) => {
         res.json({ success: true, data: orders })
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: "Lỗi" })
     }
 }
 
@@ -78,9 +78,9 @@ const updateStatus = async (req, res) => {
     console.log(req.body);
     try {
         await orderModel.findByIdAndUpdate(req.body.orderId, { status: req.body.status });
-        res.json({ success: true, message: "Status Updated" })
+        res.json({ success: true, message: "Trạng thái được cập nhật" })
     } catch (error) {
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: "Lỗi" })
     }
 
 }
@@ -90,14 +90,14 @@ const verifyOrder = async (req, res) => {
     try {
         if (success==="true") {
             await orderModel.findByIdAndUpdate(orderId, { payment: true });
-            res.json({ success: true, message: "Paid" })
+            res.json({ success: true, message: "Đã trả" })
         }
         else{
             await orderModel.findByIdAndDelete(orderId)
-            res.json({ success: false, message: "Not Paid" })
+            res.json({ success: false, message: "Chưa trả" })
         }
     } catch (error) {
-        res.json({ success: false, message: "Not  Verified" })
+        res.json({ success: false, message: "Chưa được xác thực" })
     }
 
 }

@@ -37,7 +37,7 @@ const MyOrders = () => {
                   }
                   
                 })}</p>
-                <p>${order.amount}.00</p>
+                <p>{order.amount}K VND</p>
                 <p>Số lượng: {order.items.length}</p>
                 <p><span>&#x25cf;</span> <b>{order.status}</b></p>
                 <button>Theo dõi đơn hàng</button>

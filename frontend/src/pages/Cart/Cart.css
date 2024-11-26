@@ -45,7 +45,7 @@
 .cart-total {
     flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     gap: 20px;
 }
 
@@ -69,34 +69,7 @@
     cursor: pointer;
 }
 
-.cart-promocode {
-    flex: 1;
-}
-.cart-promocode p{
-    color: #555555;
-}
-.cart-promocode-input{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #eaeaea;
-    border-radius: 4px;
-}
-.cart-promocode-input input{
-    background: transparent;
-    border: none;
-    outline: none;
-    padding-left: 10px;
-}
-.cart-promocode-input button{
-    width: max(10vw,150px);
-    padding: 12px 5px;
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 4px;
-}
+
 
 @media(max-width:750px) {
     .cart-bottom {

@@ -62,11 +62,12 @@ const Order = () => {
               <p className='order-item-phone'>{order.address.phone}</p>
             </div>
             <p>Số lượng : {order.items.length}</p>
-            <p>${order.amount}</p>
+            <p>{order.amount}K VND</p>
             <select onChange={(e)=>statusHandler(e,order._id)} value={order.status} name="" id="">
-              <option value="Food Processing">Đang xử lý</option>
-              <option value="Out for delivery">Đang được giao</option>
-              <option value="Delivered">Đã giao</option>
+              <option value="Đang xử lý">Đang xử lý</option>
+              <option value="Đang được giao">Đang được giao</option>
+              <option value="Đã giao">Đã giao</option>
+              <option value="Hủy đơn hàng">Hủy đơn hàng</option>
             </select>
           </div>
         ))}

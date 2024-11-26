@@ -12,10 +12,10 @@ const addToCart = async (req, res) => {
          cartData[req.body.itemId] += 1;
       }
       await userModel.findByIdAndUpdate(req.body.userId, {cartData});
-      res.json({ success: true, message: "Added To Cart" });
+      res.json({ success: true, message: "Đã thêm vào giỏ hàng" });
    } catch (error) {
       console.log(error);
-      res.json({ success: false, message: "Error" })
+      res.json({ success: false, message: "Lỗi" })
    }
 }
 
@@ -28,10 +28,10 @@ const removeFromCart = async (req, res) => {
          cartData[req.body.itemId] -= 1;
       }
       await userModel.findByIdAndUpdate(req.body.userId, {cartData});
-      res.json({ success: true, message: "Removed From Cart" });
+      res.json({ success: true, message: "Đã xóa khỏi giỏ hàng" });
    } catch (error) {
       console.log(error);
-      res.json({ success: false, message: "Error" })
+      res.json({ success: false, message: "Lỗi" })
    }
 
 }
@@ -44,7 +44,7 @@ const getCart = async (req, res) => {
       res.json({ success: true, cartData:cartData });
    } catch (error) {
       console.log(error);
-      res.json({ success: false, message: "Error" })
+      res.json({ success: false, message: "Lỗi" })
    }
 }
 

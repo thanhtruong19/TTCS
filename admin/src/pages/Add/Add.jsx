@@ -68,18 +68,18 @@ const Add = () => {
                         <p>Thể loại món ăn</p>
                         <select name='category' onChange={onChangeHandler} >
                             <option value="Salad">Salad</option>
-                            <option value="Rolls">Rolls</option>
-                            <option value="Deserts">Deserts</option>
-                            <option value="Sandwich">Sandwich</option>
-                            <option value="Cake">Cake</option>
-                            <option value="Pure Veg">Pure Veg</option>
-                            <option value="Pasta">Pasta</option>
-                            <option value="Noodles">Noodles</option>
+                            <option value="Món cuốn">Món cuốn</option>
+                            <option value="Tráng miệng">Tráng miệng</option>
+                            <option value="Bánh Sandwich">Bánh Sandwich</option>
+                            <option value="Bánh ngọt">Bánh ngọt</option>
+                            <option value="Món thuần chay">Món thuần chay</option>
+                            <option value="Mì ống">Mì ống</option>
+                            <option value="Mì nước">Mì nước</option>
                         </select>
                     </div>
                     <div className='add-price flex-col'>
                         <p>Giá của sản phẩm</p>
-                        <input type="Number" name='price' onChange={onChangeHandler} value={data.price} placeholder='$25' />
+                        <input type="Number" name='price' onChange={onChangeHandler} value={data.price} placeholder='Nhập giá' />
                     </div>
                 </div>
                 <button type='submit' className='add-btn' >THÊM</button>

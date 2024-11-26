@@ -24,7 +24,7 @@ const StoreContextProvider = (props) => {
     }
 
     const removeFromCart = async (itemId) => {
-        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }))
+        setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 })) //prev[itemId] : truy cập vào đối tượng lưu trong prev có khóa là itemId
         if (token) {
             await axios.post(url + "/api/cart/remove", { itemId }, { headers: { token } });
         }
@@ -51,6 +51,17 @@ const StoreContextProvider = (props) => {
         setCartItems(response.data.cartData);
     }
 
+    const fetchUsername = async (token) => {
+        try {
+            const response = await axios.get(url + "/getUser", { headers: { Authorization: `Bearer ${token}` } });
+            if (response.data.success) {
+                setUsername(response.data.username);
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    
     useEffect(() => {
         async function loadData() {
             await fetchFoodList();
